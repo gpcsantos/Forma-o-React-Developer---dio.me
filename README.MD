@@ -12,3 +12,4 @@ Projetos:
 - Modulo 03 (Ampliando conhecimento)
   - Styled Components
   - React Router Dom V6
+  - Projeto Clone dio
