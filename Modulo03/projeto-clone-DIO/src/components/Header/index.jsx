@@ -1,4 +1,5 @@
 import { Button } from '../Button';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo-full.svg';
 import {
   Container,
@@ -11,15 +12,31 @@ import {
   Flex2,
   MenuRight,
   UserPicture,
+  LogoDIO,
 } from './styles';
 
 const Header = ({ autenticado }) => {
+  const navigate = useNavigate();
+  const habdleClickSignIn = () => {
+    navigate('/login');
+  };
+  const habdleClickRegister = () => {
+    navigate('/register');
+  };
+  const habdleClickHome = () => {
+    navigate('/');
+  };
   return (
     <Wrapper>
       <Container>
         <Row>
           <Flex2>
-            <img src={logo} alt='Logo da DIO' height={30} />
+            <LogoDIO
+              src={logo}
+              alt='Logo da DIO'
+              height={30}
+              onClick={habdleClickHome}
+            />
             {autenticado ? (
               <>
                 <BuscarInputContainer>
@@ -37,8 +54,8 @@ const Header = ({ autenticado }) => {
               ) : (
                 <>
                   <MenuRight href='#'>Home</MenuRight>
-                  <Button title='Entrar' />
-                  <Button title='Cadastrar' />
+                  <Button title='Entrar' onClick={habdleClickSignIn} />
+                  <Button title='Cadastrar' onClick={habdleClickRegister} />
                 </>
               )}
             </>
