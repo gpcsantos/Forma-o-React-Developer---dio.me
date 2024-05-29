@@ -1,5 +1,6 @@
 import { Button } from '../Button';
 import { useNavigate } from 'react-router-dom';
+import { IHeader } from './types';
 import logo from '../../assets/logo-full.svg';
 import {
   Container,
@@ -15,7 +16,7 @@ import {
   LogoDIO,
 } from './styles';
 
-const Header = ({ autenticado }) => {
+const Header = ({ autenticado }: IHeader) => {
   const navigate = useNavigate();
   const habdleClickSignIn = () => {
     navigate('/login');
@@ -53,7 +54,7 @@ const Header = ({ autenticado }) => {
                 <UserPicture src='https://avatars.githubusercontent.com/u/69162677?v=4' />
               ) : (
                 <>
-                  <MenuRight href='#'>Home</MenuRight>
+                  <MenuRight href='/'>Home</MenuRight>
                   <Button title='Entrar' onClick={habdleClickSignIn} />
                   <Button title='Cadastrar' onClick={habdleClickRegister} />
                 </>
