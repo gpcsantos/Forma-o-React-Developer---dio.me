@@ -15,4 +15,11 @@ React + Vite
   - Styled Components
   - React Router Dom V6
   - Projeto Clone DIO
+- Modulo 04 (React com TypeScript)
+  - Convertendo Projeto Clone DIO para TypeScript
   - Trilha-react-desafio-4-master
+- Modulo 05 (conceitos avançados do React)
+  - Context API
+  - Custon Hooks
+  - Introdução ao NextJS (o que é, navegação, autenticação)
+  - Blog com NextJS (APRENDENDO)
