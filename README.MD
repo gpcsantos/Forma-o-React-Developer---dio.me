@@ -22,4 +22,4 @@ React + Vite
   - Context API
   - Custon Hooks
   - Introdução ao NextJS (o que é, navegação, autenticação)
-  - Blog com NextJS (APRENDENDO)
+  - Blog com NextJS - cosumindo API
